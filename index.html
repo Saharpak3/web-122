@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-4.6.0-dist/css/bootstrap.css">
+    <title>Document</title>
+    <style>
+        .row {
+            background-color: #333;
+        }
+        .bg-co {
+            padding: 0;
+            background-color: #333;
+        }
+        .bg {
+            color: #fff;
+        }
+        .bg-1 {
+            background-color: rgb(26, 59, 247);
+        }
+        .bg-2 {
+             background-color: forestgreen;
+        }
+        .bg-3 {
+            background-color: crimson;
+        }
+        .bg-4 {
+            background-color: #17a2b8;
+        }
+        .bg-5 {
+            background-color: #f8bc07;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="bg-co col-md-6">
+                <div class="row justify-content-md-center justify-content-lg-between">
+                    <div class="bg bg-1 col-md-4 order-1 order-md-2 order-lg-1 order-xl-1">col-01</div>
+                    <div class="bg bg-2 bg2 col-md-4 col-xl-8 order-2 order-md-1 order-lg-1 order-xl-1">col-02</div>
+                </div>
+            </div>
+            <div class="bg-co col-md-6">
+                <div class="row">
+                    <div class="bg-co col-md-8 col-lg-6 order-xl-1">
+                        <div class="row">
+                            <div class="col-md-12 order-2 order-xl-1 order-lg-1">
+                                <div class="bg bg-3 col-md-12">col-03</div>
+                            </div>
+                            <div class="col-md-12 order-1 order-xl-2 order-lg-2">
+                                <div class="bg bg-4 col-md-12">col-04</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-co col-md-4 col-lg-6">
+                        <div class="bg bg-5 col-md-12 pb-md-4">col-05</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
