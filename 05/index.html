@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/fonts/line-awesome/css/line-awesome.css">
+    <link rel="stylesheet" href="../bootstrap-4.6.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Homework 05 - Dashboard</title>
+</head>
+<body>
+    <header>
+        <!-- Modal -->
+        <div class="modal fade" id="logout">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Whant to leave?</h2>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead mb-0">Press loagout to leave</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Stay</button>
+                        <button type="button" class="btn btn-danger">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal done! -->
+        <!-- Nav-bar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <button type="button" class="navbar-toggler mb-2" data-toggle="collapse" data-target="#my-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="my-nav">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Sidebar -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top order-2">
+                            <a href="#" class="navbar-brand text-white text-center d-block border-bottom py-3 mb-4 mr-0">MFT WEB-122</a>
+                            <div class="d-flex align-items-center border-bottom pb-3">
+                                <img src="./assets/images/cust.jpeg" alt="user" width="50" height="50" class="rounded-circle mr-3">
+                                <a href="#" class="text-white">caltrain</a>
+                            </div>
+                            <ul class="navbar-nav flex-column mt-3">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2 current"> <i class="las la-home mr-2 la-lg"></i> Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-user mr-2 la-lg"></i> Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-envelope mr-2 la-lg"></i> Inbox</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-shopping-cart mr-2 la-lg"></i> Sales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-chart-line mr-2 la-lg"></i> Analytics</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-chart-bar mr-2 la-lg"></i> Charts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-table mr-2 la-lg"></i> Tables</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-cog mr-2 la-lg"></i> Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-white p-3 m-2"> <i class="las la-file mr-2 la-lg"></i> Documentation</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Sidebar done! -->
+                        <!-- Top-bar -->
+                        <div class="col-xl-10 col-lg-9 col-md-8 fixed-top ml-auto bg-dark py-2 top-nav order-1">
+                            <div class="row align-items-center">
+                                <div class="col-md-4">
+                                    <h4 class="text-white">DASHBOARD</h4>
+                                </div>
+                                <div class="col-md-5">
+                                    <form action="">
+                                        <div class="form-group input-group mb-0">
+                                            <input type="search" class="form-control search-input mb-3 mb-md-0" placeholder="Search...">
+                                            <button type="button" class="btn"><i class="las la-search text-danger la-lg"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="navbar-nav flex-row">
+                                        <li class="nav-item mr-3 unread">
+                                            <a href="#" class="nav-link">
+                                                <i class="las la-comment la-lg text-muted"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item unread">
+                                            <a href="#" class="nav-link">
+                                                <i class="las la-bell la-lg text-muted"></i>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item ml-auto">
+                                            <a href="#" class="nav-link" data-toggle="modal" data-target="#logout">
+                                                <i class="las la-sign-out-alt la-lg text-danger"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Top-bar done! -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav-bar done! -->
+    </header>
+    <main>
+        <!-- Main Content -->
+        <div class="container-fluid mt-md-5">
+            <div class="row">
+                <div class="col-xl-10 col-lg-9 col-md-8 ml-auto mb-3">
+                    <div class="row">
+                        <!-- Progress-Bar -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="bg-dark text-white p-3 rounded ">
+                                <h2 class="h4 mb-4">Coversion Rates</h2>
+                                <h3 class="h6 mb-3">Google Chrome</h3>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%">
+                                        <span>91%</span>
+                                    </div>
+                                </div>
+                                <h3 class="h6 mb-3">Mozilla Firefox</h3>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+                                        <span>82%</span>
+                                    </div>
+                                </div>
+                                <h3 class="h6 mb-3">Safari</h3>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="width: 67%">
+                                        <span>67%</span>
+                                    </div>
+                                </div>
+                                <h3 class="h6 mb-3">IE</h3>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+                                        <span>10%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Progress-Bar done! -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content done! -->
+    </main>
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.bundle.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
