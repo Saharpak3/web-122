@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/fonts/line-awsome/css/line-awesome.css">
+    <link rel="stylesheet" href="./css/vender/bootstrap.css">
+    <title>pure bootstrap website</title>
+</head>
+<body>
+
+    <!-- top nav -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+            <button type="button" class="navbar-toggler ml-auto mb-2" data-toggle="collapse" data-target="#my-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="my-nav">
+                <div class="container-fluid">
+                        <a href="#" class="navbar-brand text-warning"><i class="las la-atom la-lg"></i></a>
+                        <ul class="d-flex navbar-nav">
+                            <li class="nav-item"><a href="#home" class="nav-link text-white p-3 m-2">HOME</a></li>
+                            <li class="nav-item"><a href="#skills" class="nav-link text-white p-3 m-2">SKILLS</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle nav-link text-white p-3 m-2" href="#projects" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                                     PROJECTS
+                                </a>
+                                <ul class="dropdown-menu show" aria-labelledby="navbarDropdown" data-bs-popper="none">
+                                    <li><a class="dropdown-item" href="#">project 1</a></li>
+                                    <li><a class="dropdown-item" href="#">project 2</a></li>
+                                    <li><a class="dropdown-item" href="#">project 3</a></li>
+                                    <li><a class="dropdown-item" href="#">project 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#team" class="nav-link text-white p-3 m-2">TEAM</a></li>                                <li class="nav-item"><a href="#contact" class="nav-link text-white p-3 m-2">CONTACT</a></li>
+                        </ul>
+                        <form action="" class="ml-auto">
+                            <div class="form-group input-group mb-0">
+                                <input type="search" class="form-control" placeholder="Search">
+                                <button type="button" class="btn btn-light"><i class="las la-search la-lg"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- end of top nav -->
+
+    <!-- home -->
+    <section class="bg-info" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center vh-100 my-0">
+                <div class="col-12  text-center ">
+                    <h1><span class="text-warning">Pure Bootstrap</span><span class="text-white"> Website</span></h1>
+                    <p class="text-light font-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, vero.</p>
+                    <button type="button" class="btn btn-warning mr-4 px-4"> Press Here</button>
+                    <button type="button" class="btn btn-danger px-4"> Press Here</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of home -->
+
+    <!-- skills -->
+    <section class="bg-light py-5" id="skills">
+        <div class="container-fluid">
+            <div class="row align-items-center ">
+                <div class="col-12 text-center ">
+                    <h2 class="text-warning h1 mb-4">Skills</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis voluptatum officia fuga.</p>
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-md-4 text-center">
+                    <div><span><i class="las la-desktop text-warning la-9x"></i></span></div>
+                    <h4>Development</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus? Lorem ipsum dolor sit amet.</p>
+                    <button type="button" class="btn btn-outline-warning">Learn More</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div><span><i class="las la-edit text-warning la-9x"></i></span></div>
+                    <h4>Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus? Lorem ipsum dolor sit amet.</p>
+                    <button type="button" class="btn btn-outline-warning">Learn More</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div><span><i class="las la-cogs text-warning la-9x"></i></span></div>
+                    <h4>Creativity</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, temporibus? Lorem ipsum dolor sit amet.</p>
+                    <button type="button" class="btn btn-outline-warning">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of skills -->
+
+    <!-- projects -->
+    <section class="bg-white py-5" id="projects">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12 text-center my-3">
+                    <h2 class="text-warning h1 mb-4">Project</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita qui, omnis repellat ipsum nihil incidunt.</p>
+                </div>
+                <div class="col-md-3">
+                    <div style="width: 18rem;">
+                        <img src="./assests/images/1.jpg" class="card-img-top" alt="1">
+                        <div class="card-body px-0">
+                            <h5 class="card-title text-warning">Project One</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="width: 18rem;">
+                        <img src="./assests/images/2.jpg" class="card-img-top" alt="2">
+                        <div class="card-body px-0">
+                            <h5 class="card-title text-warning">Project Two</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="width: 18rem;">
+                        <img src="./assests/images/3.jpg" class="card-img-top" alt="3">
+                        <div class="card-body px-0">
+                            <h5 class="card-title text-warning">Project Three</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div style="width: 18rem;">
+                        <img src="./assests/images/4.jpg" class="card-img-top" alt="4">
+                        <div class="card-body px-0">
+                            <h5 class="card-title text-warning">Project Four</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of projects -->
+
+    <!-- team -->
+    <section class="bg-secondary py-5" id="team">
+        <div class="container-fluid">
+            <div class="row align-items-center ">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="text-warning h1 my-4">Team</h2>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint impedit sunt nemo necessitatibus aspernatur.</p>
+                </div>
+            </div>
+            <div class="row mx-2 align-items-center">
+                <div class="col-md-4">
+                    <div class="card mx-0" style="width: 18rem;">
+                        <img src="./assests/images/cust5.jpeg" class="card-img-top" alt="1">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted">Michael</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                            <div class="d-flex justify-content-end ">
+                                <i class="lab la-facebook-square text-primary la-2x mx-2"></i>
+                                <i class="lab la-youtube text-danger la-2x mx-2"></i>
+                                <i class="lab la-twitter text-info la-2x mx-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-0" style="width: 18rem;">
+                        <img src="./assests/images/beard-g1de656be2_1920.jpg" class="card-img-top" alt="2">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted">Jack</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                            <div class="d-flex justify-content-end ">
+                                <i class="lab la-facebook-square text-primary la-2x mx-2"></i>
+                                <i class="lab la-youtube text-danger la-2x mx-2"></i>
+                                <i class="lab la-twitter text-info la-2x mx-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mx-0" style="width: 18rem;">
+                        <img src="./assests/images/cust3.jpeg" class="card-img-top" alt="3">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted">Ann</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, explicabo.</p>
+                            <div class="d-flex justify-content-end ">
+                                <i class="lab la-facebook-square text-primary la-2x mx-2"></i>
+                                <i class="lab la-youtube text-danger la-2x mx-2"></i>
+                                <i class="lab la-twitter text-info la-2x mx-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of team -->
+
+    <!-- progress -->
+    <section class="bg-white py-5" id="progress">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-4">
+                    <h2 class="text-warning h1 my-4">Progress</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem sint impedit sunt nemo necessitatibus aspernatur.</p>
+                </div>
+            </div>
+            <div class="row align-items-center mx-2">
+                <div class="col-md-12 align-self-center">
+                    <div class="text-muted">
+                        <h3 class="h6 mb-3">HTML</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                        <h3 class="h6 mb-3">CSS</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                        <h3 class="h6 mb-3">JavaScript</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                        <h3 class="h6 mb-3">Bootstrap</h3>
+                        <div class="progress mb-3">
+                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of progress -->
+
+    <!-- contact -->
+    <section class="bg-light py-5" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 text-center mb-3">
+                    <h2 class="text-warning h1 my-4">Contact Us</h2>
+                    <p class="text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore numquam, esse minus sed quisquam sapiente?</p>
+                    <h5 class="h4 mt-4">Got Question ?</h5>
+                    <p class="text-muted">Stay Connected</p>
+                </div>
+            </div>
+            <div class="row mx-5">
+                <div class="col-12 mx-auto">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name" class="text-muted">Name </label>
+                            <input type="text" class="form-control ">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="text-muted">Email </label>
+                            <input type="email" class="form-control ">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment" class="text-muted">Message</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-outline-warning w-100"> Submit Question</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of contact -->
+
+    <!-- footer -->
+    <footer>
+        <div class="bg-secondary">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12 text-center">
+                        <h2 class="text-light fs-1 my-4">Pure Bootstrap Project</h2>
+                        <p class="text-white font-italic">Lorem ipsum dolor sit amet.</p>
+                        <div class="d-flex justify-content-center ">
+                            <i class="lab la-facebook-square text-primary la-2x mx-2"></i>
+                            <i class="lab la-google-plus-g text-danger la-2x mx-2"></i>
+                            <i class="lab la-twitter text-info la-2x mx-2"></i>
+                            <i class="lab la-youtube text-danger la-2x mx-2"></i>
+                        </div>
+                        <p class="text-white">&copy;Copyright 2018-made by mkazemiraz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <script src="./js/vendor/jQuery.js"></script>
+    <script src="./js/vendor/bootstrap.bundle.js"></script>
+    <!-- <script src="./js/app.js"></script> -->
+</body>
+</html>
