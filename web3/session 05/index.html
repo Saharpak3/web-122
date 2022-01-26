@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
+    <title>calculatore</title>
+    <style>
+        #result {
+            width: 60%;
+            height: 16vh;
+        }
+        table {
+            width: 60%;
+            height: 80vh;
+        }
+        tr {
+            width: 100%;
+        }
+        td {
+            width: 25%;
+            height: 16vh;
+        }
+        button {
+            width: 90px;
+            height: 90px;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row my-2 justify-content-center">
+            <div class="col-8">
+                <div id="result" class="bg-light rounded p-3"></div>
+                <!-- <input type="text" id="result" class="bg-light rounded p-3"> -->
+            </div>
+        </div>
+        <div class="calculator row justify-content-center align-items-center">
+            <div class="col-8">
+                <table>
+                    <!-- <tr>
+                        <td class="rounded-circle btn btn-light text-danger reset" onclick = "clear()"><span class="h2">C</span></td>
+                        <td class="rounded-circle btn btn-light text-success" onclick = "power()"><span class="h2">^</span></td>
+                        <td class="rounded-circle btn btn-light text-success" onclick = "percent()"><span class="h2">%</span></td>
+                        <td class="rounded-circle btn btn-light text-success" onclick = "division()"><span class="h2">/</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rounded-circle btn btn-light"><span class="h2">7</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">8</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">9</span></td>
+                        <td class="rounded-circle btn btn-light text-success" onclick = "multip()"><span class="h2">&times;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rounded-circle btn btn-light"><span class="h2">4</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">5</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">6</span></td>
+                        <td class="rounded-circle btn btn-light text-success" onclick = "minus()"><span class="h2">-</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rounded-circle btn btn-light"><span class="h2">1</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">2</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">3</span></td>
+                        <td class="rounded-circle btn btn-light text-success" onclick = "sum()"><span class="h2">+</span></td>
+                    </tr>
+                    <tr>
+                        <td class="rounded-circle btn btn-light"><span class="h2">0</span></td>
+                        <td class="rounded-circle btn btn-light"><span class="h2">.</span></td>
+                        <td class="rounded-circle btn btn-light text-success delete"><span class="h2">Del</span></td>
+                        <td class="rounded-circle btn btn-success equal" onclick = "equal()"><span class="h2">=</span></td>
+                    </tr> -->
+                    <tr>
+                        <td><button class="rounded-circle btn btn-light text-danger h2 reset">C</button></td>
+                        <td><button class="rounded-circle btn btn-light text-success h2">^</button></td>
+                        <td><button class="rounded-circle btn btn-light text-success h2">%</button></td>
+                        <td><button class="rounded-circle btn btn-light text-success h2">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="rounded-circle btn btn-light h2">7</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">8</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">9</button></td>
+                        <td><button class="rounded-circle btn btn-light text-success h2">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="rounded-circle btn btn-light h2">4</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">5</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">6</button></td>
+                        <td><button class="rounded-circle btn btn-light text-success h2">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="rounded-circle btn btn-light h2">1</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">2</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">3</button></td>
+                        <td><button class="rounded-circle btn btn-light text-success h2">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="rounded-circle btn btn-light text-success h2 del">Del</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">0</button></td>
+                        <td><button class="rounded-circle btn btn-light h2">.</button></td>
+                        <td><button class="rounded-circle btn btn-success h2 equal">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
