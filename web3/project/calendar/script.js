@@ -85,18 +85,7 @@ var data=[
       select: function(arg) {
 
         $('#myModal').modal('show');
-        // var title = prompt('Event Title:');
-        // //modal enable
-        // if (title) {
-        //   calendar.addEvent({
-        //     title: title,
-        //     start: arg.start,
-        //     end: arg.end,
-        //     allDay: arg.allDay
-        //   })
-        // }
-        // alert(typeof(arg.start));
-		//var data=Date.parse(arg.start);
+        
 		var data=arg.start;
 		var year=data.getFullYear();
 		var month=data.getMonth();
@@ -111,7 +100,7 @@ var data=[
         calendar.unselect()
       },
       editable: true,
-      eventLimit: true, // allow "more" link when too many events
+      eventLimit: true,
       events: data,
       
     });
